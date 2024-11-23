@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRU</title>
+    <link rel="stylesheet" href="css/style.css">
+	<style>
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" width="65" height="79" alt=""></a></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Help</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="mailto:aadithvasanthakumar0@gmail.com" class="find-me-btn">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+		<section id="home">
+        <div class="hero">
+            <h1 class="typewriter"><span id="typewriter-text">HI, I’m AADITH</span></h1>
+			<h1>Crafting Brand Through Design</h1>
+            <p>I am a Creative Developer, 3D artist, Video Editor, and Web Designer specializing in creating web apps with clean user interfaces and optimized user experiences.</p>
+            <div class="cta">
+				<a href="resume.html"><button class="btn">My Resume</button></a>
+                <a href="mailto:aadithvasanthakumar0@gmail.com"><button class="btn btn-dark">Let's Work Together</button></a>
+            </div>
+        </div>
+		</section>
+    </header>
+	<section id="about">
+        <div class="about-content">
+            <div class="about-img"><img src="images/album.jpg" width="148" height=""  alt="album"></div>
+            <div class="about-text">
+                <h2>Who Is Aadith - A Graphics Designer?</h2>
+                <p>I'm Aadith Vasanthakumar, a UI/UX designer. I bring ideas to life through design, from captivating landing pages to user-friendly apps and dashboards. Let’s create something extraordinary together.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <h2>How Can I Help?</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Craft Exceptional Designs</h3>
+                <p>As  Designer, I bring innovation and user-centricity to every project, whether it’s a web app, mobile interface, or a website.</p>
+            </div>
+            <div class="card">
+                <h3>From Design To Dynamic Landing Pages</h3>
+                <p>Seamlessly turn your designs into captivating, high-converting landing pages with my expertise.</p>
+            </div>
+            <div class="card">
+                <h3>Seamless Frontend Development</h3>
+                <p>I bring your ideas to life with clean, efficient code. Your website will be responsive, user-friendly, and optimized for peak performance.</p>
+            </div>
+        </div>
+    </section>
+	
+	<section id="gallery" class="gallery-section">
+    <div class="container">
+        <h2>Project Gallery</h2>
+        <p>Browse through my recent works and projects.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/w1.png" alt="Project 1">
+                <div class="overlay">
+                    
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/w2.png" alt="Project 2">
+                <div class="overlay">
+                    
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/w3.png" alt="Project 3">
+                <div class="overlay">
+                    
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/w4.jpg" alt="Project 4">
+                <div class="overlay">
+                    
+					
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+
+
+    <section id="products" class="products">
+        <h2>Presets for you</h2>
+        <div class="product-cards">
+            <div class="product-card">
+                <h3>Preset 1</h3>
+                <p>FREE To VIEW<br>Just 699/-</p>
+                <button class="btn">Get It Now</button>
+            </div>
+            <div class="product-card">
+                <h3>Preset 2</h3>
+                <p>FREE To VIEW<br>Just 1999/-</p>
+                <button class="btn">Get It Now</button>
+            </div>
+            <div class="product-card">
+                <h3>Preset 3</h3>
+                <p>FREE To VIEW<br>Just 6999/-</p>
+                <button class="btn">Get It Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="findme" class="find-me">
+        <h2>Where Can You Find Me</h2>
+        <div class="find-me-links">
+            <a href="https://www.behance.net/aadithvasanth1/services">Behance</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Upwork</a>
+            <a href="#">Githhub</a>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>I’m Up And Running, Let's Chat!</h2>
+        <div class="contact-links">
+            <a href="#">Whatsapp</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Aadith Vasanthakumar &copy; 2024-2025</p>
+		<div class="logo"><a href="index.html"><img src="images/logow.png" width="65" height="79" alt=""/></a></div>
+		
+		
+		
+    </footer>
+	 <div class="fullscreen" id="fullscreen">
+        <div class="fullscreen-content" id="fullscreen-content">
+            <video id="fullscreen-video" controls></video>
+            <img id="fullscreen-image" alt="#" />
+        </div>
+    </div>
+	<script src="js/script.js"></script>
+	<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const texts = [
+            "HI, I’m Aadith Vasanthakumar",
+            "Known as KRU",
+            "Lets Design Together"
+        ];
+
+        let count = 0;
+        let currentText = "";
+        let letterIndex = 0;
+
+        function typeEffect() {
+            if (letterIndex < texts[count].length) {
+                currentText += texts[count].charAt(letterIndex);
+                document.getElementById("typewriter-text").textContent = currentText;
+                letterIndex++;
+                setTimeout(typeEffect, 100); 
+            } else {
+                setTimeout(resetEffect, 2000); 
+            }
+        }
+
+        function resetEffect() {
+            if (letterIndex >= 0) {
+                currentText = texts[count].substring(0, letterIndex);
+                document.getElementById("typewriter-text").textContent = currentText;
+                letterIndex--;
+                setTimeout(resetEffect, 50); 
+            } else {
+                count = (count + 1) % texts.length; 
+                setTimeout(typeEffect, 500); 
+            }
+        }
+
+        typeEffect();
+    });
+		
+		
+		document.querySelectorAll('.gallery-item').forEach((box) => {
+    box.addEventListener('click', function () {
+        const fullscreen = document.getElementById('fullscreen');
+        const fullscreenImage = document.getElementById('fullscreen-image');
+        const fullscreenVideo = document.getElementById('fullscreen-video');
+        const img = this.querySelector('img');
+        const video = this.querySelector('video');
+
+        fullscreen.style.display = 'flex';
+
+        if (img) {
+            fullscreenVideo.style.display = 'none';
+            fullscreenImage.style.display = 'block';
+            fullscreenImage.src = img.src;
+        } else if (video) {
+            fullscreenImage.style.display = 'none';
+            fullscreenVideo.style.display = 'block';
+            fullscreenVideo.src = video.src;
+        }
+    });
+});
+
+document.getElementById('fullscreen').addEventListener('click', function () {
+    this.style.display = 'none';
+    document.getElementById('fullscreen-video').pause();
+    document.getElementById('fullscreen-video').src = '';
+});
+
+</script>
+
+</body>
+</html>

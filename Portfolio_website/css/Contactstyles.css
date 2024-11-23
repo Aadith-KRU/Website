@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior:smooth;
+}
+
+* {
+	
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, "Poppins Black", "Poppins ExtraBold", "Poppins ExtraLight", "Poppins Light", "Poppins Medium", "Poppins SemiBold", "Poppins Thin";
+}
+
+
+body {
+    
+    background-size: cover; 
+    font-family: Poppins, "Poppins Black", "Poppins ExtraBold", "Poppins ExtraLight", "Poppins Light", "Poppins Medium", "Poppins SemiBold", "Poppins Thin";
+	
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #007bff; 
+}
+
+.nav ul li .find-me-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav ul li .find-me-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+#contact-form {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Poppins Thin", "Poppins SemiBold", "Poppins Medium", "Poppins Light", "Poppins ExtraLight", "Poppins ExtraBold", "Poppins Black", Poppins;
+    color: #333;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Poppins Thin", "Poppins SemiBold", "Poppins Medium", "Poppins Light", "Poppins ExtraLight", "Poppins ExtraBold", "Poppins Black", Poppins;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: "Poppins Thin", "Poppins SemiBold", "Poppins Medium", "Poppins Light", "Poppins ExtraLight", "Poppins ExtraBold", "Poppins Black", Poppins;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+.form-group .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group .btn:hover {
+    background-color: #555;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+
+.btn:hover {
+    background-color: #555;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px); 
+}
+
+
+.btn:active {
+    transform: translateY(2px); 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn:hover::after {
+    opacity: 1;
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+
+
+
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 100px;
+    text-align: center;
+	
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    #contact-form {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group button {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    #contact-form {
+        padding: 10px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .form-group button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
